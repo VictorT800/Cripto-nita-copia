@@ -50,10 +50,11 @@ header {
   position: fixed;
   width: 100%;
   background-color: white;
+  height: 97px;
 }
 
 main {
-  padding-top: 97px;
+  padding-top: 96px;
 }
 
 nav ul {
@@ -61,6 +62,7 @@ nav ul {
   justify-content: space-around;
   /*background-color: #61737f;*/
   background-color: black;
+  height: 40px;
 }
 
 nav ul li {
