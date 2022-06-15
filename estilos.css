@@ -69,7 +69,7 @@ nav ul li {
   font-family: 'Montserrat', sans-serif;
   color: #f7f7f7;
   font-size: 20px;
-  line-height: 2;
+  line-height: 2.2;
 }
 
 nav ul li a {
@@ -253,7 +253,7 @@ nav ul li a:hover {
 }
 
 .noticias-texto {
-  background-color: darkred;
+  background-color: #420041;
   color: white;
   display: flex;
   flex-direction: column;
