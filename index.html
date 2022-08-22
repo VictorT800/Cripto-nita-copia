@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +13,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Righteous&family=Syncopate&display=swap" rel="stylesheet">
   <!-- Enlace a hoja de estilos -->
   <link rel="stylesheet" href="estilos.css">
+  <!-- Enlace a iconos Icomoon -->
+  <link rel="stylesheet" href="imagenes/icomoon/style.css">
   <!-- Enlace a JavaScript -->
   <script defer src="js.js"></script>
 </head>
@@ -22,13 +24,14 @@
     <h1><span class="azul">Cripto</span> <span class="rosa">Nita</span></h1>
 
     <nav>
-      <ul>
-        <li><a href="#">&#129363; Inicio</a></li>
-        <li><a href="#nosotros">&#128125; Nosotros</a></li>
-        <li><a href="#espectaculos">&#127925; Espectáculos</a></li>
-        <li><a href="#noticias">&#128640; Noticias</a></li>
+      <button class="boton-nav"><i class="icon-menu"></i></button>
+      <ul class="nav-menu">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#espectaculos">Espectáculos</a></li>
+        <li><a href="#noticias">Noticias</a></li>
         <!-- <li><a href="#">&#127775; Galería</a></li> -->
-        <li><a href="#contacto">&#127926; Contacto</a></li>
+        <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
   </header>
@@ -62,7 +65,7 @@
             <h4>Vicente Marín</h4>
             <p>Nacido en Valencia en 1975.</p>
             <p>Empezó a tocar la guitarra desde una edad muy temprana, y ha llevado esa afición a un exitoso desarrollo como guitarrista profesional.</p>
-            <p>En la actualidad tiene su propio grupo musical y actúa también en diversas orquestas y espectáculos musicales como el ya famoso "SOOL funky mode", así como en colaboraciones con artistas de renombre como <em>Fito y los Fitipaldis</em> o <em>La Banda del Pop</em></p>
+            <p>En la actualidad tiene su propio grupo musical y actúa también en diversas orquestas y espectáculos musicales como el ya famoso "SOOL funky mode", siendo también el guitarra y director musical de <em>La Banda del Pop</em></p>
           </div>
         </div>
         <div class="sobre-nosotros">
@@ -166,6 +169,9 @@
       </article>
     </section>
 
+    <div class="btn-videos">
+      <a href="galeria.html">Acceso a galería de fotos y vídeos</a>
+    </div>
 
     <div class="foto-superbanner">
       <img src="imagenes/party702Baner.jpg" alt="Foto party disco">
@@ -197,11 +203,106 @@
             <p>Showcase Live</p>
           </div>
         </div>
+
+        <div class="noticias">
+          <div class="noticas-img">
+            <img src="imagenes/fotosacoustic/soolAcousticCartel3.jpg" alt="Actuación SOOL Acoustic fecha">
+          </div>
+          <div class="noticias-texto">
+            <h4>3 de Agosto</h4>
+            <p>Jorquiria Lounge</p>
+          </div>
+        </div>
+
+        <div class="noticias">
+          <div class="noticas-img">
+            <img src="imagenes/fotosacoustic/soolAcousticCartel4.jpg" alt="Actuación SOOL Acoustic fecha">
+          </div>
+          <div class="noticias-texto">
+            <h4>1 de Junio</h4>
+            <p>Pz. del Mercado - Picassent</p>
+          </div>
+        </div>
+
+        <div class="noticias">
+          <div class="noticas-img">
+            <img src="imagenes/fotosacoustic/soolAcousticCartel5.jpg" alt="Actuación SOOL Acoustic fecha">
+          </div>
+          <div class="noticias-texto">
+            <h4>23 de Julio</h4>
+            <p>Cheste</p>
+          </div>
+        </div>
+
+        <div class="noticias">
+          <div class="noticas-img">
+            <img src="imagenes/fotosacoustic/soolAcousticCartel6.jpg" alt="Actuación SOOL Acoustic fecha">
+          </div>
+          <div class="noticias-texto">
+            <h4>27 de Mayo</h4>
+            <p>Pz. Mercado - Picassent</p>
+          </div>
+        </div>
+
+        <div class="noticias">
+          <div class="noticas-img">
+            <img src="imagenes/fotosacoustic/soolAcousticCartel7.jpg" alt="Actuación SOOL Acoustic fecha">
+          </div>
+          <div class="noticias-texto">
+            <h4>20 de Mayo</h4>
+            <p>Rock City</p>
+          </div>
+        </div>
+
+
       </div>
 
     </section>
 
+    <section id="contacto">
+      <h2>Contacto</h2>
+
+      <div class="grid-contacto">
+
+        <div class="contacto-item">
+          <button><i class="icon-location2"></i></button>
+          <p>Dirección oficinas</p>
+          <p>Pz. de la Abadía nº 2</p>
+          <p>46.220 - Picassent (Valencia)</p>
+        </div>
+
+        <div class="contacto-item">
+          <button><i class="icon-envelop"></i></button>
+          <p>Puedes escribirnos a este email</p>
+          <p>info@criptonita.com</p>
+        </div>
+
+        <div class="contacto-item">
+          <button><i class="icon-phone"></i></button>
+          <p>Si prefieres que hablemos, este es nuestro teléfono</p>
+          <p>600 000 000</p>
+        </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-item">
+        <p>&copy; <span class="copy"></span> - Nantaket Multimedia</p>
+      </div>
+    </footer>
+
   </main>
+
+  <!-- Banner Cookies -->
+  <div class="aviso-cookies">
+    <img class="galleta" src="imagenes/galletaJenjibre.png" alt="galleta">
+    <h3 class="titulo-galletas">Cookies</h3>
+    <p class="parrafo-galletas">Utilizamos cookies propias y de terceros sólo con fines estadísticos y para mejorar nuestro servicio.</p>
+    <button class="boton-galletas">De acuerdo</button>
+    <a class="enlace-galletas" href="aviso-cookies.html">Aviso de cookies</a>
+  </div>
+  <div class="fondo-aviso-cookies"></div>
 
 </body>
 </html>
