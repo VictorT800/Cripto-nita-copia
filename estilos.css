@@ -216,6 +216,7 @@ nav ul li a:hover {
 #espectaculos .degradado {
   text-align: center;
   font-size: 60px;
+  text-indent: 0px;
   background: linear-gradient(90deg, rgba(0,229,17,1) 0%, rgba(0,229,17,1) 30%, rgba(255,0,100,1) 70%, rgba(255,0,100,1) 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -375,6 +376,9 @@ nav ul li a:hover {
 }
 
 .contacto-item button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 60px;
   width: 140px;
   height: 140px;
@@ -489,6 +493,28 @@ footer {
 
 
 /* ------------------- Estilos página Galería de IMAGENES ---------------------- */
+
+.tituloH1 {
+  font-family: 'Syncopate', sans-serif;
+  font-size: 50px;
+  letter-spacing: 25px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.header-galeria {
+  display: flex;
+  flex-direction: column;
+}
+
+nav.nav-galeria {
+  display: flex;
+  justify-content: space-around;
+  /*background-color: #61737f;*/
+  background-color: black;
+}
+
+
 .img-container {
   display: grid;
   /*grid-template-columns: repeat(3, 1fr);*/
@@ -608,6 +634,67 @@ footer {
   main {
     padding-top: 40px;
   }
+
+  section {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .contenedor p {
+    font-size: 18px;
+  }
+
+  /* padding top para que qeude alineado elementos menú navegación*/
+  #nosotros {
+    padding-top: 0px;
+  }
+
+  #espectaculos {
+    padding-top: 0px;
+  }
+
+  #noticias {
+    padding-top: 0px;
+  }
+
+  #contacto {
+    padding-top: 5px;
+  }
+
+  /* ----------- Estilos sección CONTACTO -------------- */
+  .contacto-item button {
+    font-size: 35px;
+    width: 100px;
+    height: 100px;
+    padding: 30px;
+    border-radius: 100px;
+    margin: 20px 0;
+  }
+
+  .contacto-item p {
+    font-size: 18px;
+  }
+
+  .grid-contacto {
+    max-width: 100%;
+
+  }
+
+  /* Sección Noticias*/
+  .noticias-contenedor {
+    gap: 20px;
+  }
+
+  /* Secciones imágenes espectáculos */
+  .fotos-funky {
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+
+  .logo-sool img {
+    max-width: 70%;
+  }
+
 }
 
 /* -------------------------- widht 668px ----------------------------- */
@@ -621,4 +708,138 @@ footer {
     opacity: 1;
   
   }
+}
+
+/* -------------------------- widht 580px ----------------------------- */
+@media screen and (max-width: 580px){
+  h1 {
+    font-size: 22px;
+    letter-spacing: 10px;
+    opacity: 1;
+  
+  }
+
+  h2 {
+    font-size: 30px;
+    margin-top: 40px;
+    padding-bottom: 40px;  
+  }
+
+  h3 {
+    font-size: 8vw;
+  }
+
+  #espectaculos .degradado {
+    font-size: 45px;
+    padding-top: 50px;
+  }
+
+  /* Sección Noticias*/
+  .noticias-texto p {
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .noticias-texto h4 {
+    color: white;
+  }
+
+  /* ----------- Estilos sección CONTACTO -------------- */
+  .grid-contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px 20px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .contacto-item button {
+    font-size: 30px;
+    width: 45px;
+    height: 45px;
+    padding: 30px;
+    margin: 10px 0;
+  }
+
+  .contacto-item p {
+    font-size: 16px;
+  }
+
+}
+
+/* -------------------------- widht 380px ----------------------------- */
+@media screen and (max-width: 380px){
+  h2 {
+    font-size: 25px;
+    margin-top: 40px;
+    padding-bottom: 30px;  
+  }
+
+  h3 {
+    letter-spacing: 10px;
+    margin-top: 40px;
+  }
+
+  .foto-banner {
+    height: 130px;
+  }
+
+  .contenedor p {
+    font-size: 16px;
+  }
+
+  .sobre-nosotros-contenedor {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sobre-nosotros {
+    max-width: 100%;
+  }
+
+  .sobre-nosotros:nth-child(1) {
+    margin-bottom: 40px;
+  }
+
+  #espectaculos .degradado {
+    font-size: 30px;
+    padding-top: 35px;
+  }
+
+  .fotos-funky {
+    grid-template-columns: 1fr;
+  }
+
+  .logo-sool img {
+    max-width: 95%;
+  }
+
+  .fotos-funky img {
+    display: none;
+  }
+
+  .fotos-funky img.visible380 {
+    display: block;
+    width: 100%;
+  }
+
+
+  /* Sección Noticias*/
+
+  .noticias-contenedor {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 20px;
+  }
+
+  .noticias-texto p {
+    font-size: 18px;
+  }
+  
+  .noticias-texto h4 {
+    font-size: 22px;
+  }
+
 }
