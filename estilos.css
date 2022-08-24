@@ -770,6 +770,11 @@ nav.nav-galeria {
 
 /* -------------------------- widht 380px ----------------------------- */
 @media screen and (max-width: 380px){
+
+  h1 {
+    letter-spacing: 8px;
+  }
+
   h2 {
     font-size: 25px;
     margin-top: 40px;
@@ -777,7 +782,7 @@ nav.nav-galeria {
   }
 
   h3 {
-    letter-spacing: 10px;
+    letter-spacing: 8px;
     margin-top: 40px;
   }
 
